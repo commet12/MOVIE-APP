@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+/* Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}
+/*
+###################
+#####
+დასაწყისი, searchbar
+#####
+###################
+*/
+.container {
+    background-color: #f30606;
+    position: absolute;
+    width: 90vw;
+    font-size: 18px;
+    padding: 3em 1.8em;
+    top: 50%;
+    left: 50%;
+    max-width: 37.5em;
+    border-radius: 0.6em;
+    transform: translate(-50%, -50%);
+    box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+}
+.searchbar {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.2em;
+
+}
+
+.searchbar input,
+.searchbar button {
+    outline: none;
+    font-size:0.8em;
+    border-radius: 0.4em; 
+}
+
+.searchbar input {
+    background-color: transparent;
+    border: 1px solid #e2d1c3;
+    color: #fdfcfb;
+    padding: 0.8em;
+}
+.searchbar input:focus {
+    border-color: #fdfcfb;
+}
+.searchbar button {
+    border: none;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: #fdfcfb;
+}
+
+#result {
+    color: #fdfcfb;
+}
+
+.poster {
+    width: 100%;
+    border-radius: 0.5em;
+}
+.info {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    position: relative;
+    align-items: center;
+    margin-top: 1em;
+}
+h2 {
+    font-size: 1.7em;
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    font-family: 'Rubik Glitch', cursive;
+
+}
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.6em;
+}
+.rating h4 {
+    display: inline-block;
+    font-size: 1em;
+}
+.details {
+    display: flex;
+    font-size: 1em;
+    gap: 1em;
+    font-weight: 500;
+    color: #000000;
+    margin: 0.5em;
+    font-weight: 700;
+    justify-content: center;
+}
+.msg {
+    text-align: center;
+}
+
+.genre {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+}
+.genre div {
+    border: 1px solid #e2d1c3;
+    border-radius: 0.5em;
+    padding: 0.4em 1.6em;
+    color: #edf756;
+
+}
+h3 {
+    margin-top: 1.2em;
+}
+p{
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #edf756;
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        font-size: 12px;
+    }
+    .info {
+        grid-template-columns: 1fr;
+    }
+    .poster {
+        margin: auto;
+        max-height: 11em;
+        width: auto;
+    }
+    
+}

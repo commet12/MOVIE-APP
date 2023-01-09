@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="first">click here</button>
+
+    <script>
+        // console.log('civi niavi');
+        // setTimeout(function() {
+        //     console.log('karoche es mere daiprinteba')
+        // }, 3000)
+        // console.log('callbackamde') 
+
+
+        // let zero = 0;
+
+        // const vincxa = setInterval(function() {
+        //     console.log('iprinteba da iprinteba');
+        //     zero++;
+
+        //     if (zero === 5) {
+        //         clearInterval(vincxa);
+        //         console.log('morcha kino');
+        //     }
+        // }, 2000);
+
+        // while(true) {
+        //     let ktota = prompt('ramdenia 8-4');
+        //     if (ktota ==='4') {
+        //         break;
+        //     }
+        //     console.log('pirveli klasi gamomitove simon?')
+        // }
+
+
+        // const vaxushta = ['winandali','raja', 'naingolani'];
+        // const [raja, naingolani] = vaxushta;
+
+
+        // const vajkaci = {
+        //     'saxeli' : 'adindoma',
+        //     'karche' : 'raja',
+        //     'vada' : 'naingolani'
+        // }
+
+        // const {karche, vada} = vajkaci;
+
+
+        // while (true) {
+            
+        //     let num = prompt (`chawere ricxvi`);
+        //     num = Number(num);
+
+        //     const randomnum = Math.ceil(Math.random() * 10);
+
+        //     if (num === randomnum) {
+        //         alert('sagol'); 
+        //         break;
+        //         } else {
+        //         console.log('narmalna, sheni iyo', num, "sinamdvileshi iyo", randomnum)
+        //     }
+        // }
+        
+        // const racxa = 11
+        // try {
+        //     racxa = racxa + 12;
+        // } catch(error) {
+        //     console.warn("error", error);
+        // } finally {
+        //     console.log('es ricxvia', racxa)
+        // }
+
+        // class dasawyisi {
+        //     firstfunction(name) {
+        //         this.name = name;
+        //     }
+        //     secondfunction() {
+        //         if (this.name === undefined) {
+        //             console.log('zapasnoi variant');
+        //         }
+        //         console.log(`welqam ma frend ${this.name}`)
+        //     }
+        // }
+
+        // const shenaxva = new dasawyisi();
+        // shenaxva.firstfunction('ciurixi');
+        // shenaxva.secondfunction();
+
+
+        // fetch('https://swapi.dev/api/starships/9/')
+        //     .then(pasuxi => pasuxi.json())
+        //     .then(info => console.log(info))
+
+        const smth =document.querySelector("#first");
+       
+
+        smth.addEventListener("click", (e) => {
+            const ragaca = Math.ceil(Math.random() * 83);
+            fetch(`https://swapi.dev/api/starships/${ragaca}/`)
+                .then(resp => resp.json())
+                .then(bolos => console.log(bolos))
+        })
+       
+
+        
+
+    </script>
+</body>
+</html>
